@@ -1,0 +1,17 @@
+.button {
+    align-items: center;
+    padding: 3px 12px;
+    color: var(--dark-grey);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    border: 1px solid var(--bright-grey);
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submit {
+    background-color: var(--green);
+    color: var(--white);
+}

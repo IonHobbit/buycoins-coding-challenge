@@ -1,0 +1,48 @@
+.text-input {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark-grey);
+    vertical-align: middle;
+    border: 1px solid var(--bright-grey);
+    border-radius: 6px;
+    box-shadow: none;
+    background-color: var(--color-input-bg);
+}
+
+.text-input:focus {
+    border-color: var(--cyan-blue);
+    box-shadow: 0 0 0 3px var(--celtic-blue);
+}
+
+.header-searchbar-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    font-size: inherit;
+    font-weight: 400;
+    color: var(--white);
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid var(--charcoal-grey);
+    box-shadow: none;
+}
+
+.header-searchbar {
+    color: var(--white);
+    background-color: transparent;
+    min-height: 28px;
+    width: 243px;
+    padding: 0 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: inherit;
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+
+.header-searchbar::placeholder {
+    color: var(--bright-grey);
+}

@@ -1,0 +1,93 @@
+.tabs {
+    position: sticky;
+    top: 0;
+    padding: 0 16px;
+    margin: auto -16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: var(--white);
+    z-index: 100;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark-grey);
+    white-space: nowrap;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-item:hover {
+    border-bottom: 2px solid var(--very-light-grey);
+    cursor: pointer;
+}
+
+.tab-item ~ .selected {
+    font-weight: 600;
+    color: var(--dark-grey);
+    border-bottom: 2px solid var(--salmon);
+}
+
+.tab-item ~ .selected > .icon {
+    fill: var(--dark-grey);
+}
+
+.tab-item .count {
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--dark-grey);
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 2em;
+    background-color: var(--light-grey);
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-container {
+        z-index: 150;
+        max-width: 1280px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .nav-container > .tabs {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .tabs > .user-profile {
+        width: 25%;
+        transition: all 0.2s;
+    }
+
+    .tabs > .tab {
+        width: 75%;
+    }
+
+    .tab > .tab-item {
+        line-height: 30px;
+    }
+
+    .tab-item > .icon {
+        margin-right: 8px;
+        vertical-align: text-bottom;
+    }
+}
+
+@media only screen and (min-width: 1012px) {
+    .nav-container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .nav-container > .tabs {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+}
